@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple structured web page example">
+    <title>My First Assignment</title>
+    <style>
+      body {
+        font-family: "Lucida Console", fantasy;
+        margin: 0;
+        padding: 0;
+        background-color: #e7c175;
+        text-align: center;
+        /* Center-aligns all text */
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        background-image: url('images/hanginglanterns.jpg');
+        /* Add the URL of your image */
+        background-size: cover;
+        /* Ensures the image covers the entire header */
+        background-position: center;
+        /* Centers the image */
+        background-repeat: no-repeat;
+        /* Prevents the image from repeating */
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: #444;
+        display: flex;
+        /* Enable Flexbox */
+        justify-content: center;
+        /* Center items horizontally */
+      }
+
+      nav ul li {
+        flex: 1;
+        /* Ensures each list item takes equal space */
+        text-align: center;
+        /* Centers the text inside each item */
+      }
+
+      nav ul li a {
+        color: white;
+        padding: 14px 20px;
+        display: block;
+        text-decoration: none;
+      }
+
+      nav ul li a:hover {
+        background-color: #555;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      .content {
+        margin: 20px 0;
+      }
+
+      .content img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      footer {
+        width: 100%; /* Ensures the footer takes up the full width of the page */
+        background-color: #333; /* Matches your existing color scheme */
+        color: white; /* Text color for contrast */
+        text-align: center; /* Center-aligns the text within the footer */
+        padding: 10px 0; /* Padding for spacing inside the footer */
+        margin: 0; /* Removes any default margin */
+        position: relative; /* Ensures footer stays within the document flow */
+        left: 0; /* Ensures alignment from the left side of the viewport */
+      }
+
+      ul {
+        list-style-type: disc;
+        margin-left: 20px;
+      }
+
+      /* Thick black border */
+      hr.blackline {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>Mid Autumn Festival</h1>
+      <p>A Celebration of Reunions and Gratitude</p>
+    </header>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#history">History</a>
+        </li>
+        <li>
+          <a href="#mooncakes">Mooncakes</a>
+        </li>
+        <li>
+          <a href="#others">Others</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Main Content Section -->
+    <div class="container">
+      <!-- Home Section -->
+      <section id="home" class="content">
+        <h2>Home</h2>
+        <p>Welcome to my Mid Autumn Festival Page </p>
+        <p>This web page is dedicated to explain the traditions of the festival</p>
+        <hr class="blackline">
+      </section>
+      <!-- History Section -->
+      <section id="history" class="content">
+        <h2>History of Mid Autumn Festival</h2>
+        <div style="display: flex; align-items: flex-start; gap: 20px;">
+          <!-- Flexbox container for layout -->
+          <div style="flex: 1; text-align: justify;">
+            <!-- Text container -->
+            <p style="text-align: justify;"> The Mid-Autumn Festival, also known as the Moon Festival or the Mooncake Festival, is a traditional festival celebrated primarily in East Asian countries, especially China, Vietnam, Taiwan, and Singapore. Its origins date back over 3,000 years to ancient China during the Shang dynasty, when people worshipped the moon for bountiful harvests. The festival is celebrated on the 15th day of the 8th lunar month, when the moon is believed to be at its fullest and brightest. The Mid-Autumn Festival is associated with the legend of Chang'e, the Moon Goddess, who is said to have taken an elixir of immortality and ascended to the moon, leaving her husband, Hou Yi, behind on Earth. </p>
+            <p style="text-align: justify;"> Over time, the festival has evolved from a harvest celebration to one that emphasizes family reunions, symbolized by the roundness of the full moon. Traditional customs include eating mooncakes, a pastry filled with sweet or savory fillings, and gazing at the moon. Lanterns are also lit and displayed, particularly by children. Today, the Mid-Autumn Festival remains a time for families to come together, celebrate the harvest, and enjoy cultural performances, making it one of the most important traditional festivals in Chinese culture. </p>
+          </div>
+          <img src="images/lantern.jpg" alt="Mid Autumn Lantern" style="max-width: 200px; height: auto; flex-shrink: 0;">
+          <!-- Image on the right -->
+        </div>
+        <hr class="blackline">
+      </section>
+      <!-- Mooncakes Section -->
+      <section id="mooncakes" class="content">
+        <h2>Mooncakes</h2>
+        <p style="text-align: justify;"> In recent years the creation of mooncakes has evolved from the standard traditional to the modernized snowskin.</p> 
+        <p style="text-align: justify;"> Now mooncakes consisting of a variety of ingredients are enjoyed by people of all ages.</p>
+        <br>
+        <table style="width: 50%; margin: 0 auto;">
+          <tr>
+            <td style="text-align: center; vertical-align: top;">
+              <h3>Traditional Mooncake</h3>
+              <img src="images/traditionalmooncake.jpg" alt="Mooncake Image 1" style="width: 300px; height: 200px; object-fit: cover;">
+            </td>
+            <td style="text-align: center; vertical-align: top;">
+              <h3>Snowskin Mooncake</h3>
+              <img src="images/snowskinmooncake.jpg" alt="Mooncake Image 2" style="width: 300px; height: 200px; object-fit: cover;">
+            </td>
+          </tr>
+        </table>
+        <hr class="blackline">
+      </section>
+      <!-- Other Activities Section -->
+      <section id="others" class="content">
+        <h2>Others</h2>
+        <p>Here is a list of activities done during the festival:</p>
+        <div style="text-align: center;">
+          <ol style="list-style-position: inside; display: inline-block; text-align: left; padding-left: 0;">
+            <li>
+              <b>Lantern Design and Lighting</b>
+              <p> Lanterns, often in the shape of animals, plants, or traditional symbols, are designed, lit, and displayed, especially by children. In some places, lantern processions or parades are held, creating a festive and colorful atmosphere. </p>
+            </li>
+            <li>
+              <b>Moongazing</b>
+              <p> Since the festival coincides with the full moon, many people gather outdoors to admire the moon, which is believed to be at its brightest and fullest. It's a time for reflection and appreciation of nature's beauty. </p>
+            </li>
+            <li>
+              <b>Dragon and Lion Dances</b>
+              <p> In some communities, dragon and lion dances are performed to add to the festive spirit. These dances are believed to bring good luck and are a common feature in many traditional Chinese celebrations. </p>
+            </li>
+            <li>
+              <b>Cultural Performances</b>
+              <p> In some areas, cultural performances such as traditional Chinese opera, music, and dance are organized as part of the festival celebrations. </p>
+            </li>
+            <li>
+              <b>Worshipping the Moon</b>
+              <p> In some regions, people still perform rituals to worship the Moon Goddess, Chang'e. Offerings of fruits, mooncakes, and other foods are made on altars set up outside under the moon. </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- Footer Section -->
+      <footer>
+        <p>&copy; 2024 My First Assignment. All rights reserved.</p>
+      </footer>
+  </body>
+</html>
